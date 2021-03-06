@@ -83,7 +83,7 @@ namespace firefox
             }
             return key_int;
         }
-        public void fastkey(string key) // it will send coded key, and keep it pressed number of miliseconds in argument 2. 50miliseconds will be default. 
+        public void fastkey(string key) // it will send coded key, and keep it pressed 50miliseconds 
         {
             int time = 50;
             byte key_int = get_key(key);// get Byte of Key
@@ -97,7 +97,7 @@ namespace firefox
             byte key_int = get_key(key);// get Byte of Key
             keybd_event(key_int, 0, KEYEVENTF_EXTENDEDKEY, 0); // press key
         }
-        public void keyUp(string key) // it will up coded key, unpresses it. (=\)
+        public void keyUp(string key) // it will up coded key, unpresses it =\
         {
             byte key_int = get_key(key);// get Byte of Key
             keybd_event(key_int, 0, KEYEVENTF_KEYUP, 0); // press key
