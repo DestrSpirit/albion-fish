@@ -23,6 +23,7 @@ namespace firefox
         static int dif = 0;
         static Bitmap cursor = new Bitmap("action.png");
         static Bitmap b = new Bitmap("save.png");
+        //isfishing? loop
         public void isaction()
         {
             while (true)
